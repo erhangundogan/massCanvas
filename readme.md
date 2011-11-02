@@ -8,8 +8,12 @@ Usage
 // Constructor
 var mass = Object.create(MassCanvas("canvasID"));
 
-// Red, blue, green, black through color transition with 1/10 sec
-mass.colorWheel(["#F00", "#00F", "#0F0", "#000"], 100);
+// colorWheel(colorArray, interval, loop)
+// Arguments:
+//   colorArray: array of strings. Each item hex color definition 3/6 digits.
+//   interval: int. Color transition animation frame rate.
+//   loop: boolean. If true color transition loops forever.
+mass.colorWheel(["#F00", "ca0", "336699", "#feb", "#102030"], 10, true);
 ```
 
 Author
